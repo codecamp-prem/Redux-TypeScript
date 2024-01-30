@@ -11,11 +11,14 @@ body {
 #main-header {
   @apply flex justify-between items-center py-12 px-[15%];
 }
+#main-title {
+  @apply flex items-center;
+}
 #main-title img {
   @apply w-20 mr-6;
 }
 h1 {
-  @apply text-center uppercase text-[#edbf68] drop-shadow-text text-[2.5rem] m-0;
+  @apply text-center uppercase text-[#edbf68] drop-shadow-text text-[1.5rem] sm:text-[2.5rem] m-0;
 }
 #main-header button {
   @apply bg-[#edbf68] border-none rounded-[5px] py-[0.5rem] px-[1.5rem] text-[#201e1a] text-[1.25rem] cursor-pointer;
@@ -24,7 +27,7 @@ h1 {
   @apply bg-[#f5b744];
 }
 #shop {
-  @apply w-[70%] my-[2rem] mx-auto;
+  @apply w-[77%] my-[2rem] mx-auto;
 }
 #shop h2 {
   @apply text-[1.5rem] text-[#a59b8b] uppercase;
@@ -33,13 +36,13 @@ h1 {
   @apply list-none m-0 p-0 grid grid-cols-products gap-8;
 }
 .product {
-  @apply h-[100%] bg-[#5f4e33] rounded-[6px] flex flex-col drop-shadow-product;
+  @apply h-full bg-[#5f4e33] rounded-[6px] flex flex-col drop-shadow-product;
 }
 .product img {
   @apply w-full rounded-[6px];
 }
 .product-content {
-  @apply flex flex-col flex-1 pt-0 pb-4 pl-2 pr-4 justify-between;
+  @apply flex-1 pt-0 pb-4 pl-2 pr-4 flex flex-col  justify-between;
 }
 .product-content h3 {
   @apply text-[1.25rem] text-[#fbd392] mb-[0.15rem];
@@ -57,7 +60,7 @@ h1 {
   @apply bg-[#f5b744];
 }
 #cart-modal {
-  @apply top-20 w-[30%] bg-[#d3b17b] border-none rounded-[6px] animate-cartmodal;
+  @apply top-40 w-[30%] bg-[#d3b17b] border-none rounded-[6px] animate-cartmodal;
 }
 .cart-backdrop {
   @apply fixed top-0 left-0 w-full h-[100vh] bg-[#000000];
